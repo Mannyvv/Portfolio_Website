@@ -1,0 +1,14 @@
+$primary-color: #016fb9;
+
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Outfit Variable' ;
+  src: url('./assets/fonts/outfit-latin-400-normal.ttf') format('ttf');
+}
+
+input,
+textarea {
+  font-family: 'Outfit Variable';
+}
