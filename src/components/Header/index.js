@@ -7,9 +7,9 @@ import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-ic
 
 const Header = () => {
     return (
-        <div className='header'>
-            <Link className='logo' to='/'>
-                <img src={Logo} alt='Logo'></img>
+        <div className='header animate__animated animate__rotateInUpRight' >
+            <Link className='logo ' to='/'>
+                <img className='animate__animated animate__fadeInLeft' src={Logo} alt='Logo'></img>
             </Link>
             <nav>
                 <NavLink exact="true" activeclassname="active" to='/'>
@@ -22,7 +22,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faContactBook} color='#white'/> 
                 </NavLink>
             </nav>
-        <ul>
+        <ul className='animate__animated animate__fadeInRight'>
             <li>
                 <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/manuelvera1/'>
                     <FontAwesomeIcon icon={faLinkedin} color='#19647E'/>
