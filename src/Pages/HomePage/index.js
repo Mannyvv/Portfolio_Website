@@ -31,7 +31,7 @@ const HomePage = () => {
                         </div>
                     </Col>
                 </Row>
-                <hr class="bg-dark"></hr>
+                <hr className="bg-dark"></hr>
 
                 {/*//////////////// 2nd Row //////////////// */}
                 <Row className="row">
@@ -62,7 +62,7 @@ const HomePage = () => {
                     </Col>
                     
                 </Row>
-                <hr class="bg-dark"></hr>
+                <hr className="bg-dark"></hr>
 
                 {/*//////////////// 3rd Row //////////////// */}
                 <Row className="row" >
@@ -79,9 +79,8 @@ const HomePage = () => {
                         <img src={codeImage} alt="Code Image"></img>
                     </Col>
                 </Row>
-                <hr class="bg-dark"></hr>
+                <hr className="bg-dark"></hr>
             </Container>
-
 
         </div>
     )
