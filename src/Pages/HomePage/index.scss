@@ -1,9 +1,69 @@
-
 .home-page{
-    background-color: red;
-    h1{
-        img{
-            width: 32px;
+
+    
+    .row {
+        height: 500px;
+        .col {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            
+            .text-zone {
+                transition: all 0.3s ease;
+                &:hover{
+                    transform: translateX(50px) scale(1.1);
+                    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+                    
+                }
+                h1{
+                    font-size: 8rem;
+                }
+                h2{
+                    font-size: 2rem;
+                    font-weight: 200;
+                    letter-spacing: 2px;
+                    color: #FFC331;
+                }
+                
+                
+            }
+        }
+        
+    }
+    
+    img{
+        width: 100%;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px black;
+            transform: translateX(-50px)
+        }
+    }
+    
+    
+    .logo-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+       
+        .icon {
+            font-size: 10rem;
+            cursor: pointer;
+            transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+            
+            &:hover {
+                transform: scale(1.5);
+                opacity: 1; /* Adjust the opacity of the hovered item */
+            }
+            
+            &:hover ~ .icon {
+                opacity: 0.5; /* Adjust the opacity of all siblings when one is hovered */
+            }
+            
         }
     }
 }

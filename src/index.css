@@ -8,11 +8,11 @@ body {
   margin: 0;
   font: 300 11px/1.4 'Outfit Variable', 'sans-serif';
   color: #fdfffc;
-  /* color : #4444; */
-  /* background-color: #016FB9; */
+
   background-color: #19647E;
-  overflow: hidden;
-  display: block;
+  /* Visible for scrolling */
+  overflow: visible;
+  /* display: block; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

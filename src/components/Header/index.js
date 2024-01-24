@@ -2,12 +2,12 @@ import { Link, NavLink } from 'react-router-dom';
 import './index.scss'
 import Logo from "../../assets/images/logo.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faContactBook,faUser  } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faHome, faContactBook,faUser, faProjectDiagram, faDiagramProject  } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faRProject, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Header = () => {
     return (
-        <div className='header animate__animated animate__rotateInUpRight' >
+        <div className='header animate__animated animate__fadeInDown' >
             <Link className='logo ' to='/'>
                 <img className='animate__animated animate__fadeInLeft' src={Logo} alt='Logo'></img>
             </Link>
@@ -15,10 +15,13 @@ const Header = () => {
                 <NavLink exact="true" activeclassname="active" to='/'>
                     <FontAwesomeIcon icon={faHome} color='#white'/> 
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='about-link' to='/about'>
+                <NavLink exact="true" activeclassname="active" className='about-link' to='/About'>
                     <FontAwesomeIcon icon={faUser} color='#white'/> 
                 </NavLink>
-                <NavLink exact="true" activeclassname="active" className='contact-link' to='/contact'>
+                <NavLink exact="true" activeclassname="active" className='projects-link' to='/Projects'>
+                    <FontAwesomeIcon icon={faDiagramProject} color='#white'/> 
+                </NavLink>
+                <NavLink exact="true" activeclassname="active" className='contact-link' to='/Contact'>
                     <FontAwesomeIcon icon={faContactBook} color='#white'/> 
                 </NavLink>
             </nav>

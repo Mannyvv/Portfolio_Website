@@ -1,4 +1,5 @@
-import HomePage from '../../Pages/HomePage'
+
+import { Outlet } from 'react-router-dom'
 import Header from '../Header'
 import './index.scss'
 
@@ -7,7 +8,8 @@ const Layout = () => {
     return (
     <>
     <Header/>
-    <HomePage/>
+    <Outlet/>
+    
     </>
         )
 }
