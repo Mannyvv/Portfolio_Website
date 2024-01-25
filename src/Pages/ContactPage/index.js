@@ -1,58 +1,61 @@
-
-import { useState } from 'react';
-import { Container, Form, Label, Input, Button, Row, Col ,FormGroup} from 'reactstrap';
+// Import your CSS file for styles
 import './index.scss';
+import React, { useState, useRef } from 'react';
+import { Container, Label, Input, Button, Row, Col, FormGroup } from 'reactstrap';
+import emailjs from '@emailjs/browser';
+
 const ContactPage = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [linkedin, setLinkedin] = useState('');
     const [message, setMessage] = useState('');
+    const ref = useRef();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(name, email, linkedin, message);
-        setName('');
-        setEmail('');
-        setLinkedin(''); 
-        setMessage('');
-
-        // TODO: Add a toast here to show the user that the message was sent
-        // Handle form submission logic here 
+        try {
+            await emailjs.sendForm('gmail_serviceId', 'PortContactForm', ref.current, "KpX63pSs8RGWsFcep");
+            setName('');
+            setEmail('');
+            setLinkedin('');
+            setMessage('');
+        } catch (error) {
+            console.error("Message Failed to Send:", error);
+           
+        }
     };
-    const inputStyle = {lineHeight:"44px", fontSize:"18px"}
-    const messageStyle = {lineHeight:"44px", fontSize:"18px", height:"200px"}
-    const labelStyle = {fontSize:"18px"}
 
     return (
         <Container className='contact-page'>
             <h1>Contact Page</h1>
-            <Row >
-                <Col md="12" className='' >
-                    <Form className="form-class"  onSubmit={handleSubmit}>
+            <Row>
+                <Col md="12">
+                    {/* Reactstrap Form component wasn't working for some reason, switched to HTML */}
+                    <form className="form-class" ref={ref} onSubmit={handleSubmit}>
                         <FormGroup className='group'>
-                        <Label >
-                            Name:
-                        </Label>
-                            <Input className='input' type="text"  value={name} onChange={(e) => setName(e.target.value)} />
-                        <br />
-                        <Label >
-                            Email:
-                        </Label>
-                            <Input className='input' type="email"  value={email} onChange={(e) => setEmail(e.target.value)} />
-                        <br />
-                        <Label >
-                            LinkedIn:
-                        </Label>
-                            <Input className='input' type="text"  value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
-                        <br />
-                        <Label >
-                            Message:
-                        </Label>
-                            <Input className='input' type="textarea"  value={message} onChange={(e) => setMessage(e.target.value)} />
-                        <br />
-                        <Button type="submit">Submit</Button>
+                            <Label htmlFor="name" style={{ fontSize: "18px" }}>
+                                Name*:
+                            </Label>
+                            <Input id="name" className='input' type="text" name='name' placeholder='Name' value={name} required onChange={(e) => setName(e.target.value)} />
+                            <br />
+                            <Label htmlFor="email" style={{ fontSize: "18px" }}>
+                                Email*:
+                            </Label>
+                            <Input id="email" className='input' type="email" name='email' placeholder='Email' value={email} required onChange={(e) => setEmail(e.target.value)} />
+                            <br />
+                            <Label htmlFor="linkedin" style={{ fontSize: "18px" }}>
+                                LinkedIn:
+                            </Label>
+                            <Input id="linkedin" className='input' type="text" name='linkedin' placeholder='LinkedIn URL' value={linkedin} onChange={(e) => setLinkedin(e.target.value)} />
+                            <br />
+                            <Label htmlFor="message" style={{ fontSize: "18px" }}>
+                                Message*:
+                            </Label>
+                            <Input id="message" className='input' type="textarea" name='message' placeholder='Enter Message Here' value={message} required onChange={(e) => setMessage(e.target.value)} />
+                            <br />
+                            <Button className='submit-button' type="submit">Submit</Button>
                         </FormGroup>
-                    </Form>
+                    </form>
                 </Col>
             </Row>
         </Container>

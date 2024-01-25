@@ -65,21 +65,17 @@ const HomePage = () => {
                 <hr className="bg-dark"></hr>
 
                 {/*//////////////// 3rd Row //////////////// */}
-                <Row className="row" >
+                {/* Holder */}
+                {/* <Row className="row" >
                     <Col className="col" md="6">
-                        <div className="text-zone">
-                            <h1> Technologies Used: <br /> I'm Manny Vera.
-                                <br />
-                            </h1>
-                            <h2>Full Stack Developer | Product Oriented | Servant Leader</h2>
-                        </div>
+                        
                     </Col>
 
                     <Col className="col" md="6">
-                        <img src={codeImage} alt="Code Image"></img>
+                        
                     </Col>
                 </Row>
-                <hr className="bg-dark"></hr>
+                <hr className="bg-dark"></hr> */}
             </Container>
 
         </div>

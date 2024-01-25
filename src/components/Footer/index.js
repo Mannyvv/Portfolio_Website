@@ -9,9 +9,13 @@ const Footer = () => {
   const footerRef = useRef(null);
 
   useEffect(() => {
-    const footerWidth = footerRef.current.offsetWidth;
     const tl = gsap.timeline({ repeat: -1, yoyo: true });
-    tl.to(".pokeball", { x: 1800, rotation: 720, duration: 5 });
+
+
+    const pokeballElement = footerRef.current.querySelector('.pokeball');
+    const maxX = window.innerWidth - pokeballElement.clientWidth-19;
+   
+    tl.to(".pokeball", { x: maxX, rotation: 720, duration: 5 });
   }, []);
 
   return (
@@ -22,6 +26,6 @@ const Footer = () => {
 
     </footer>
   )
-}
+} 
 
 export default Footer;

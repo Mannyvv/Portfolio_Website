@@ -1,10 +1,9 @@
 import React from 'react';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle, Button, Row, Col, Container } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import './index.scss';
 import { Cards } from '../../data/cardImages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin,faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGithub,faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 
@@ -41,7 +40,16 @@ const ProjectsPage = () => {
                         </Col>
                     ))}
                 </Row>
-            </Container>
+                <hr className="bg-dark"></hr>
+                <Row className="row">
+                    <Col className="col d-flex justify-content-center mt-5" md="12">
+                        <div className="text-button d-flex flex-column align-items-center">
+                            <h1>Please Check Out my Github for more projects!</h1>
+                            <Button className='button-link justify-self-center' tag='a' href="https://github.com/Mannyvv" target="_blank" rel="noopener noreferrer">Click Here!</Button>
+                        </div>
+                    </Col>
+                </Row>
+            </Container> 
         </>
     );
 };

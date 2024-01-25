@@ -1,5 +1,6 @@
 .container {
     margin-top: 20px; // Adjust the value as needed
+    min-height: 80vh;
     h1 {
         margin-bottom: 20px; // Adjust the value as needed
     }
@@ -26,7 +27,7 @@
                 border-radius: 5px;
                 box-shadow: 0 0 15px rgba(0,0,0,0.5);
                 border: solid 1px #16130c;
-                z-index: 1;
+                z-index: 1; 
                 cursor: zoom-in;
             }
         }
@@ -56,4 +57,24 @@
             cursor: pointer;
         }
     }
+    .button-link{
+        font-size: 15px;
+        
+        margin-right: 10px;
+        width: 40%;
+        background-color: #FFC331;
+        
+        svg{
+            font-size: 20px;
+        }
+        &:hover{
+            background-color: #FFA500;;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.575);
+            
+            cursor: pointer;
+            
+        }
+        &:active {
+            background-color: #ffedcd; // Change the color as needed
+        }}
 }
