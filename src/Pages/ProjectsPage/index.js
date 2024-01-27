@@ -40,7 +40,7 @@ const ProjectsPage = () => {
                         </Col>
                     ))}
                 </Row>
-                <hr className="bg-dark"></hr>
+                <hr className=" line-break bg-dark"></hr>
                 <Row className="row">
                     <Col className="col d-flex justify-content-center mt-5" md="12">
                         <div className="text-button d-flex flex-column align-items-center">

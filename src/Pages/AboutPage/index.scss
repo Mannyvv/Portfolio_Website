@@ -1,10 +1,10 @@
 
 .about-page {
-    min-height: 80vh;
+    // min-height: 80vh;
     .about-me {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start; 
         margin-top: 3rem;
         
         .open {
@@ -14,7 +14,7 @@
         h1 {
             font-size: 5rem;
             font-weight: 700;
-            text-align: center;
+            text-align: start;
             margin-bottom: 2rem;
         }
 

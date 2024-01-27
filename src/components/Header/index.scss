@@ -1,147 +1,263 @@
-.header {
-    background-color: #ffffff;
-    width: 100%;
-    height: 150px;
-    position: sticky;
-    // z-index: 3;
-    display: flex;
-    flex-direction: row;
+// .header {
+//     background-color: #ffffff;
+//     width: 100%;
+//     height: 150px;
+//     position: sticky;
+//     // z-index: 3;
+//     display: flex;
+//     flex-direction: row;
  
-    .logo{
-        display:flex;
-        // background-color: red;
-        align-items: center;
+//     .logo{
+//         display:flex;
+//         // background-color: red;
+//         align-items: center;
         
         
-        img{
-            margin: 30px;
-            width: auto;
-            height: 100px;
-            animation-delay: 1.7s;
-            border-radius: 60px;
-            transition: all 0.3s ease-in-out ;
+//         img{
+//             margin: 30px;
+//             width: auto;
+//             height: 100px;
+//             animation-delay: 1.7s;
+//             border-radius: 60px;
+//             transition: all 0.3s ease-in-out ;
             
 
-            &:hover{
-                box-shadow: 0px 0px 20px #000000;
-                border-radius: 60px;
-                height: 70%;
-            }
-        }
-    }
+//             &:hover{
+//                 box-shadow: 0px 0px 20px #000000;
+//                 // border-radius: 60px;
+//                 transform: scale(1.2);
+                    
+//                 }
+            
+//         }
+//     }
 
     
-    nav {
-    display: flex;
-    text-align: center;
-    height: 210px;
-    align-items: center;
-    justify-content: center;
-    // background-color: blue;
-    height: auto;
-    width: 100%;
-    margin-left: 0%;
-    flex-direction: row;
+//     .nav {
+//     display: flex;
+//     text-align: center;
+//     height: 210px;
+//     align-items: center;
+//     justify-content: center;
+//     // background-color: blue;
+//     height: auto;
+//     width: 100%;
+//     margin-left: 0%;
+//     flex-direction: row;
     
-        a{
-            font-size: 30px;
-            color: #19647E;
-            margin: 20px;
-            text-decoration: none;
-            display: block;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            position: relative;
+//         a{
+//             font-size: 30px;
+//             color: #19647E;
+//             margin: 20px;
+//             text-decoration: none;
+//             display: block;
+//             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+//             position: relative;
             
-            i{
-                transition: all 0.3s ease-out;
-            }
+//             i{
+//                 transition: all 0.3s ease-out;
+//             }
             
-            &:hover {
-                color: #FFC331;
+//             &:hover {
+//                 color: #FFC331;
                 
-                svg {
-                    opacity: 0;
-                }
+//                 svg {
+//                     opacity: 0;
+//                 }
                 
-                &:after{
-                    opacity: 1;
-                }
-            }
+//                 &:after{
+//                     opacity: 1;
+//                 }
+//             }
 
-            &:after{
-                content: '';
-                font-size: 16px ;
-                letter-spacing: 2px;
-                position: absolute;
-                opacity: 0;
-                display: block;
-                top: 10px;
-                right: 8px;
-                width: 100%;
-                text-align: center;
-                transition: all 0.3s ease-out ;
+//             &:after{
+//                 content: '';
+//                 font-size: 16px ;
+//                 letter-spacing: 2px;
+//                 position: absolute;
+//                 opacity: 0;
+//                 display: block;
+//                 top: 10px;
+//                 right: 8px;
+//                 width: 100%;
+//                 text-align: center;
+//                 transition: all 0.3s ease-out ;
                
-            }
+//             }
             
-            &:first-child{
-                &::after{
-                    content: 'Home';
-                }
-            }
-        }
-        a.about-link{
-            &:after{
-                content: 'About';
-            }
-        }
-        a.contact-link{
-            &:after{
-                content: 'Contact';
-            }
-        }
+//             &:first-child{
+//                 &::after{
+//                     content: 'Home';
+//                 }
+//             }
+//         }
+//         a.about-link{
+//             &:after{
+//                 content: 'About';
+//             }
+//         }
+//         a.contact-link{
+//             &:after{
+//                 content: 'Contact';
+//             }
+//         }
 
-        a.projects-link{
-            &:after{
-                content: 'Projects';
-            }
-        }
+//         a.projects-link{
+//             &:after{
+//                 content: 'Projects';
+//             }
+//         }
 
-        a.active{
-            svg{
-                color: #FFC331;
-            }
-        }
-    }
+//         a.active{
+//             svg{
+//                 color: #FFC331;
+//             }
+//         }
+//     }
 
 
-    ul {
-        width: 5%;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-        animation-delay: 1.7s;
-        li{
-            a{
-                padding: 7px;
-                display: block;
-                font-size: 20px;
-                width: auto;
-                line-height: 16px;
-                transition: all 1s ease-in ;
+//     ul {
+//         width: 5%;
+//         list-style: none;
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         align-content: center;
+//         align-items: center;
+//         text-align: center;
+//         animation-delay: 1.7s;
+//         li{
+//             a{
+//                 padding: 7px;
+//                 display: block;
+//                 font-size: 20px;
+//                 width: auto;
+//                 line-height: 16px;
+//                 transition: all 1s ease-in ;
                 
 
-                &:hover svg{
-                    color:#FFC331;
-                    height: 110%;
-                    width: 90%;
-                }
+//                 &:hover svg{
+//                     color:#FFC331;
+//                     height: 110%;
+//                     width: 90%;
+//                 }
+//             }
+//         }
+        
+        
+//     }
+// }
+ 
+
+.navbar-section {
+    background-color: white;
+    width: 100%;
+    
+    // border-bottom: solid 1px black;
+    box-shadow: 0px 0px 15px 1px rgb(63, 63, 63);
+
+
+        .logo{
+            display:flex;
+            // background-color: red;
+            align-items: center;
+            
+            
+            img{
+                margin: 0px;
+                width: auto;
+                height: 8em;
+                animation-delay: 1.7s;
+                border-radius: 60px;
+                transition: all 0.3s ease-in-out ;
+                 
+    
+                &:hover{
+                    box-shadow: 0px 0px 15px #000000;
+                    // border-radius: 60px;
+                    transform: scale(1.08);
+                        
+                    }
+                
             }
         }
+
         
+      
+
+        .nav-section{
+
+            a{
+                            font-size: 30px;
+                            color: #19647E;
+                            margin: 20px;
+                            text-decoration: none;
+                            
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            position: relative;
+
+                            
+                            i{
+                                transition: all 0.3s ease-out;
+                            }
+                            
+                            &:hover {
+                                color: #FFC331;
+                                
+                                svg {
+                                    opacity: 0;
+                                }
+                                
+                                &:after{
+                                    opacity: 1;
+                                }
+                            }
+                
+                            &:after{
+                                content: '';
+                                font-size: 16px ;
+                                letter-spacing: 2px;
+                                position: absolute;
+                                opacity: 0;
+                                display: block;
+                                top: 10px;
+                                right: 8px;
+                                width: 100%;
+                                text-align: center;
+                                transition: all 0.3s ease-out ;
+                               
+                            }
+                            
+                            &:first-child{
+                                &::after{
+                                    content: 'Home';
+                                }
+                            }
+                        }
+                        a.about-link{
+                            &:after{
+                                content: 'About';
+                            }
+                        }
+                        a.contact-link{
+                            &:after{
+                                content: 'Contact';
+                            }
+                        }
+                
+                        a.projects-link{
+                            &:after{
+                                content: 'Projects';
+                            }
+                        }
+                
+                        a.active{
+                            svg{
+                                color: #FFC331;
+                            }
+                        }
+                    }
+                    
         
-    }
+    
 }
