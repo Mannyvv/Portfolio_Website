@@ -5,16 +5,18 @@ import { Cards } from '../../data/cardImages';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub,faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 
 const ProjectsPage = () => {
+    
 
     const cards = Cards
 
 
     return (
         <>
-            <Container className='project-page'> 
+            <Container className='project-page animate__animated animate__fadeInRight'> 
                 <h1>Projects Page</h1>
                 <Row>
                     {cards.map((card, index) => (

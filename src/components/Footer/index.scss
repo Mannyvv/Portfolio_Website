@@ -1,16 +1,16 @@
 .footer {
   color: blue;
-  width: 100%; /* Take up the full width of the parent container */
-  box-sizing: border-box; /* Include padding and border in the width */
-  height: 100px; /* Adjust this value as needed */
+  width: 100%; 
+  box-sizing: border-box; 
+  height: 100px; 
   padding: 1em;
-  margin-top: 4em; /* Adjust this value as needed */
+  margin-top: 4em; 
   display: flex;
   justify-content: flex-start;
   background-color: rgb(255, 255, 255);
 
   .pokeball { 
-    width: 80px; /* Adjust this value as needed */
-    height: auto; /* Keep the aspect ratio of the image */
+    width: 80px; 
+    height: auto; 
   }
 }

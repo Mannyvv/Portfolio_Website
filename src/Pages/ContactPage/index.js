@@ -30,7 +30,7 @@ const ContactPage = () => {
     };
 
     return (
-        <Container className='contact-page'>
+        <Container className='contact-page animate__animated animate__fadeInRight'>
             <h1>Contact Page</h1>
             <Row>
                 <Col md="12">

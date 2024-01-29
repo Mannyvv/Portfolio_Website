@@ -44,10 +44,9 @@ const AboutPage = () => {
                     <AccordionItem>
                         <AccordionHeader targetId="2" className={open === '2' ? 'open' : ""}><h2>Personal</h2></AccordionHeader>
                         <AccordionBody accordionId="2">
-                            <h4>Hi, I'm [Your Name]
-
-                                I'm a [Your Job Title] with [Number of Years of Experience] years of experience in the tech industry.
-                                I specialize in [Your Specialties]. In my previous role at [Previous Company Name], I [What You Accomplished or Learned There].
+                            <h4>
+                                I geek out over tech and all love to promote Scienct, Technology, Engineering Math (STEM). Whether I'm diving into the latest gadgets or exploring cool places, 
+                                 I'm all about the fun side of curiosity and learning.
                             </h4>
                         </AccordionBody>
                     </AccordionItem>

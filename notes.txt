@@ -1,0 +1,11 @@
+Upload to heroku
+
+heroku login
+
+docker build -t your-image-name .
+docker tag your-image-name registry.heroku.com/your-app-name/web
+docker push registry.heroku.com/your-app-name/web
+
+heroku container:login
+heroku container:release web -a your-app-name
+heroku open -a your-app-name

@@ -5,7 +5,7 @@
     .line-break{
         margin: 40px 20%
     }
-    margin-top: 20px; // Adjust the value as needed
+    margin-top: 20px; 
     min-height: 80vh;
     h1 {
         font-size: 5rem; 
@@ -21,7 +21,7 @@
     }   
 
     .card{
-        margin: 10px; // Adjust the value as needed
+        margin: 10px; 
         transition: transform 0.3s ease-out, opacity 0.3s ease-out;
         .card-text{
             margin-top: 10px;
@@ -57,7 +57,7 @@
                 
             }
             &:active {
-                background-color: #ffedcd; // Change the color as needed
+                background-color: #ffedcd; 
             }
             
         }
@@ -85,6 +85,6 @@
             
         }
         &:active {
-            background-color: #ffedcd; // Change the color as needed
+            background-color: #ffedcd; 
         }}
 }
