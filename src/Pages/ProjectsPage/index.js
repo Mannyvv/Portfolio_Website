@@ -14,7 +14,7 @@ const ProjectsPage = () => {
 
     return (
         <>
-            <Container className='project-page'>
+            <Container className='project-page'> 
                 <h1>Projects Page</h1>
                 <Row>
                     {cards.map((card, index) => (

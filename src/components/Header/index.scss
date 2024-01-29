@@ -163,23 +163,30 @@
             align-items: center;
             
             
-            img{
+            @keyframes spin {
+                from {
+                  transform: rotate(0deg);
+                }
+                to {
+                  transform: rotate(360deg);
+                }
+              }
+              
+              img {
                 margin: 0px;
                 width: auto;
                 height: 8em;
                 animation-delay: 1.7s;
                 border-radius: 60px;
-                transition: all 0.3s ease-in-out ;
-                 
-    
-                &:hover{
-                    box-shadow: 0px 0px 15px #000000;
-                    // border-radius: 60px;
-                    transform: scale(1.08);
-                        
-                    }
+                transition: all 0.3s ease-in-out;
+              
+                &:hover {
+                  box-shadow: 0px 0px 15px #000000;
+                  transform: scale(1.08);
+                  animation: spin 1s infinite linear;
+                }
                 
-            }
+              }
         }
 
         
@@ -201,6 +208,7 @@
                                 transition: all 0.3s ease-out;
                             }
                             
+                            @media (min-width: 600px) {
                             &:hover {
                                 color: #FFC331;
                                 
@@ -212,7 +220,11 @@
                                     opacity: 1;
                                 }
                             }
+                        }
                 
+                            
+                                
+                            
                             &:after{
                                 content: '';
                                 font-size: 16px ;
@@ -225,7 +237,7 @@
                                 width: 100%;
                                 text-align: center;
                                 transition: all 0.3s ease-out ;
-                               
+                                
                             }
                             
                             &:first-child{
@@ -244,13 +256,13 @@
                                 content: 'Contact';
                             }
                         }
-                
+                        
                         a.projects-link{
                             &:after{
                                 content: 'Projects';
                             }
                         }
-                
+                        
                         a.active{
                             svg{
                                 color: #FFC331;
@@ -258,6 +270,27 @@
                         }
                     }
                     
-        
+        li{
+                        a{
+                            padding: 7px;
+                            display: block;
+                            font-size: 20px;
+                            width: auto;
+                            line-height: 16px;
+                            transition: all 1s ease-in ;
+                            
+            
+                            &:hover svg{
+                                color:#FFC331;
+                                transform: scale(1.9);
+                                
+                            }
+                        }
+                    }
+
+    .small-links{
+        font-size: 30px;
+        margin-left: 20px;
+    }
     
 }

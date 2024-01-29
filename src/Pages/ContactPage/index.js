@@ -3,6 +3,9 @@ import './index.scss';
 import React, { useState, useRef } from 'react';
 import { Container, Label, Input, Button, Row, Col, FormGroup } from 'reactstrap';
 import emailjs from '@emailjs/browser';
+import { sentNotifcation } from '../../Features/Toasts';
+
+import { ToastContainer } from 'react-toastify';
 
 const ContactPage = () => {
     const [name, setName] = useState('');
@@ -19,9 +22,10 @@ const ContactPage = () => {
             setEmail('');
             setLinkedin('');
             setMessage('');
+            sentNotifcation();
         } catch (error) {
             console.error("Message Failed to Send:", error);
-           
+            
         }
     };
 
@@ -58,6 +62,7 @@ const ContactPage = () => {
                     </form>
                 </Col>
             </Row>
+            <ToastContainer />  
         </Container>
     );
 };

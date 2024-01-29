@@ -35,9 +35,9 @@ const HomePage = () => {
 
                 {/*//////////////// 2nd Row //////////////// */}
                 <Row className="row">
-                <Col className="column d-none d-md-block" xs="12" md="6">
-                        <div className="text-zone">
-                            <h1> Technologies<br/> Used:
+                <Col className="column  d-none d-md-flex justify-content-center align-items-center" xs="12" md="6">
+                        <div className="text-zone d-flex justify-content-center align-items-center">
+                            <h1> Technologies<br/> Used
                             </h1>
                            
                         </div>
@@ -45,7 +45,10 @@ const HomePage = () => {
 
                     <Col className="column" xs="12" md="6">
                         <div className="logo-grid">
+                            <a href="https://github.com/Mannyvv/Amazon_FBA_Report_Analyzer/blob/main/Amazon_FBA_Report_Analyzer.py" target="_blank" rel="noreferrer">
+
                            <FontAwesomeIcon className="icon python-color" icon={faPython} color="#FFE052" />
+                            </a>
                             <FontAwesomeIcon className="icon" icon={faNode} color='#6cc24a'/>
                             <FontAwesomeIcon className="icon" icon={faHtml5} color="#F16529"></FontAwesomeIcon>
                             <FontAwesomeIcon className="icon" icon={faCss3} color="#039BE5"></FontAwesomeIcon>
