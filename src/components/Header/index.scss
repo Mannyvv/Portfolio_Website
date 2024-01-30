@@ -2,9 +2,9 @@
 .navbar-section {
     background-color: white;
     width: 100%;
+   
     
-    // border-bottom: solid 1px black;
-    box-shadow: 0px 0px 15px 1px rgb(63, 63, 63);
+   
 
 
         .logo{
@@ -43,6 +43,7 @@
       
 
         .nav-section{
+            
 
             a{
                             font-size: 30px;
@@ -121,7 +122,8 @@
                     }
                     
         li{
-                        a{
+            list-style-type: none;
+                        a{ 
                             padding: 7px;
                             display: block;
                             font-size: 20px;

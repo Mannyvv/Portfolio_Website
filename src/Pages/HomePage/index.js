@@ -1,19 +1,19 @@
 import { Row, Col, Container } from "reactstrap";
-import AnimatedLetters from "../../components/AnimatedLetters";
+// import AnimatedLetters from "../../components/AnimatedLetters";
 import './index.scss';
 import codeImage from '../../assets/images/code.png'
-import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss3, faDocker, faGithub, faHtml5, faJs, faNode, faPython, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase, } from "@fortawesome/free-solid-svg-icons";
+import Quote from "../../components/Quotes";
 
 
 
 
 const HomePage = () => {
 
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = []
+    // const [letterClass, setLetterClass] = useState('text-animate')
+    // const nameArray = []
     return (
         <div className="page home-page ">
             <Container className="mt-5">
@@ -21,7 +21,7 @@ const HomePage = () => {
                 <Row className="row">
 
                     <Col className="column d-none d-md-block" md="6">
-                        <img src={codeImage} alt="Code Image"></img>
+                        <img src={codeImage} alt="Code"></img>
                     </Col>
                     <Col className="column" xs="12" md="6">
                         <div className="text-zone">
@@ -85,7 +85,7 @@ const HomePage = () => {
 
                 </Row>
                 <hr className="line-break bg-dark"></hr>
-
+                <Quote />
                 {/*//////////////// 3rd Row //////////////// */}
                 {/* Holder */}
                 {/* <Row className="row" >

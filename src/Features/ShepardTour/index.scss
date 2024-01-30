@@ -1,0 +1,35 @@
+
+.shepherd-theme-custom{
+    
+    .shepherd-arrow:before{
+        background-color: #FFC331;
+    }
+    
+    .shepherd-content{
+        background-color: #FFC331;
+        padding-top: 10px;
+        
+    }
+    .shepherd-button{
+        background-color: #19647E;
+    }
+    .shepherd-tooltip {
+        /* Style the entire tooltip container */
+        /* For example: */
+        background-color: #fd0000;
+        color: #fff;
+        border-radius: 50px;
+        .shepherd-arrow{
+            fill: #fd0000;
+        }
+      }
+      
+}
+
+.tour-highlight{
+    // border-radius: 15px;
+    background-color: #0994be;
+}
+
+
+
