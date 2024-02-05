@@ -4,7 +4,7 @@
 
 
 export const discordWebHook =  () => {
-    fetch("https://discord.com/api/webhooks/1204060881521086474/0pWMHuhTW_0oVW-R8dgODCYSUYl8YHTr6QT3acob-Tuf1K-JwFFZsJo_HbasuV4xVbZe", {
+    fetch(process.env.REACT_APP_DISCORD_WEBHOOK_URL, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
