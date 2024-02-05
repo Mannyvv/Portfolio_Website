@@ -33,12 +33,15 @@ import {
 
 import IntroModal from "../../Features/IntroModal";
 
+import { discordWebHook } from "../Utils/DiscordBot";
+
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [toggleOpen, setToggleOpen] = useState(false);
+  const siteVisited = discordWebHook;
 
-
+  siteVisited();
 
   return (
     <>

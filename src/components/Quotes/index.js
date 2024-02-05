@@ -8,7 +8,7 @@ const Quote = () => {
     const getRandomQuote = (quotesArray) => {
         const randomIndex = Math.floor(Math.random() * quotesArray.length);
         const quote = quotesArray[randomIndex];
-        console.log("This is the single quote", quote);
+       
         setRandomQuote(quote);
     }
 
@@ -22,7 +22,7 @@ const Quote = () => {
                 }
             })
             .then((data) => {
-                console.log("The data went through", data);
+               
                
                 getRandomQuote(data);
             })
