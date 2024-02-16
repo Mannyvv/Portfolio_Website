@@ -2,8 +2,8 @@ Upload to heroku
 
 heroku login
 
-docker build -t port-app-v3 .
-docker tag port-app-v3 registry.heroku.com/portfolio-site-manny/web
+docker build -t port-app-v4 .
+docker tag port-app-v4 registry.heroku.com/portfolio-site-manny/web
 heroku container:login
 docker push registry.heroku.com/portfolio-site-manny/web
 
