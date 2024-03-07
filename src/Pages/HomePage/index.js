@@ -46,7 +46,7 @@ const HomePage = () => {
 
                     <Col className="column" xs="12" md="6">
                         <div className="logo-grid">
-                            <a href="https://github.com/Mannyvv/Amazon_FBA_Report_Analyzer/blob/main/Amazon_FBA_Report_Analyzer.py" target="_blank" rel="noreferrer">
+                            <a href="https://github.com/Mannyvv/SocketServer_Chat/blob/main/server.py" target="_blank" rel="noreferrer">
                                 <FontAwesomeIcon className="icon python-color" icon={faPython} color="#FFE052" />
                             </a>
                             <a href="https://github.com/Mannyvv/Portfolio_Website/blob/main/package.json" target="_blank" rel="noreferrer">
