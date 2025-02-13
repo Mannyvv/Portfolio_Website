@@ -1,5 +1,5 @@
 import './index.scss'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import pokeBall from "../../assets/images/pokeball.png"
 import { gsap } from "gsap";
 import { useRef } from 'react';
