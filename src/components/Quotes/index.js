@@ -13,7 +13,7 @@ const Quote = () => {
     }
 
     useEffect(() => {
-        fetch("https://type.fit/api/quotes")
+        fetch("https://zenquotes.io/api/random")
             .then((response) => {
                 if (response.ok) {
                     return response.json();
