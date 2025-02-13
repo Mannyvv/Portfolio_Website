@@ -13,7 +13,9 @@ const Quote = () => {
     }
 
     useEffect(() => {
-        fetch("https://zenquotes.io/api/random")
+        fetch("https://zenquotes.io/api/random",{
+            mode: "no-cors"
+        })
             .then((response) => {
                 if (response.ok) {
                     return response.json();
