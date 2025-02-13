@@ -1,5 +1,5 @@
 import './index.scss'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import pokeBall from "../../assets/images/pokeball.png"
 import { gsap } from "gsap";
 import { useRef } from 'react';
@@ -29,3 +29,4 @@ const Footer = () => {
 } 
 
 export default Footer;
+

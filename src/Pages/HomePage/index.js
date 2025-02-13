@@ -14,6 +14,7 @@ const HomePage = () => {
 
     // const [letterClass, setLetterClass] = useState('text-animate')
     // const nameArray = []
+    
     return (
         <div className="page home-page ">
             <Container className="mt-5">
@@ -105,3 +106,4 @@ const HomePage = () => {
 }
 
 export default HomePage
+
