@@ -10,7 +10,7 @@ export const Cards = [
         "subtitle": "Subtitle 2",
         "text": " The app enables users to create and display notes on a virtual board with the motto \"Read a Note, Leave a Note.\" Key features include a form for entering title and content, which is transformed into a virtual \"post-it\" note on the display wall. The technologies used include React.js for the front end, an Express.js server for CRUD actions, and a PostgreSQL database hosted on ElephantSQL for data storage.",
         "image": demoImage,
-        "links": ["https://demo-notes.com/", "https://github.com/Mannyvv/NoteApp_React_Frontend"]
+        "links": ["https://main.d1xzc0vlbn6nba.amplifyapp.com/", "https://github.com/Mannyvv/Post-It_w_ReactTS"]
     },
     {
         "title": "Websocket Chat Server with Python",

@@ -1,55 +1,44 @@
 import "./index.scss";
 import { useState, useEffect } from "react";
 
-
 const Quote = () => {
-    const [randomQuote, setRandomQuote] = useState(null);
-
-    const getRandomQuote = (quotesArray) => {
-        const randomIndex = Math.floor(Math.random() * quotesArray.length);
-        const quote = quotesArray[randomIndex];
-       
-        setRandomQuote(quote);
-    }
+    const [randomQuote, setRandomQuote] = useState({ q: "Loading...", a: "" });
 
     useEffect(() => {
-        fetch("https://zenquotes.io/api/random",{
-            mode: "no-cors"
-        })
+        fetch("https://zenquotes.io/api/random")
             .then((response) => {
-                if (response.ok) {
-                    return response.json();
-                } else {
-                    throw new Error('Failed to fetch quotes');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
                 }
+                return response.json();
             })
             .then((data) => {
-               
-               
-                getRandomQuote(data);
+                if (Array.isArray(data) && data.length > 0) {
+                    setRandomQuote(data[0]); 
+                } else {
+                    throw new Error("Unexpected API response format");
+                }
             })
             .catch((error) => {
-                console.error('Error fetching quotes:', error);
+                console.error("Error fetching quotes:", error);
+                setRandomQuote({ q: "Failed to load quote.", a: "Try again later" });
             });
     }, []);
-
-
-
 
     return (
         <div className="quotes">
             <div className="quotes__container">
                 <blockquote className="blockquote text-center">
                     <h1 className="quote-text mb-0">
-                        {randomQuote ? randomQuote.text : "Loading..."}
+                        {randomQuote.q}
                     </h1>
                     <cite className="blockquote-footer">
-                        {randomQuote ? randomQuote.author : ""}
+                        {randomQuote.a}
                     </cite>
                 </blockquote>
             </div>
         </div>
     );
-}
+};
 
 export default Quote;
